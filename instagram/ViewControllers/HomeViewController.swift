@@ -89,6 +89,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             let post = posts?[indexPath.row]
             //cell.usernameLabel.text = post?.
             cell.post = post
+            cell.usernameLabel.text = "pk"
         }
         return cell
     }
