@@ -8,7 +8,8 @@
 
 import UIKit
 import Parse
-import Alamofire
+
+
 
 
 class LoginViewController: UIViewController {

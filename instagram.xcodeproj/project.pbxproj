@@ -10,6 +10,9 @@
 		0E66B337EDD0BA69154B0BE2 /* Pods_instagramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE770AF347120C55FC1E1152 /* Pods_instagramUITests.framework */; };
 		426FB3FAC6C8297869C37871 /* Pods_instagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59227CB8A2EFE564F2923552 /* Pods_instagramTests.framework */; };
 		A1210E20E114F439AD0E990B /* Pods_instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB992F6771659BBD7B147C0D /* Pods_instagram.framework */; };
+		D18AA738202A941C003C6B85 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AA737202A941C003C6B85 /* HomeViewController.swift */; };
+		D18AA73A202A98B6003C6B85 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AA739202A98B6003C6B85 /* PostCell.swift */; };
+		D18AA73C202A9CAF003C6B85 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AA73B202A9CAF003C6B85 /* Post.swift */; };
 		D195A1AC202A75A6004F17A0 /* PhotoMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D195A1AB202A75A6004F17A0 /* PhotoMapViewController.swift */; };
 		D1F91FF5202A5B7A00FE6CD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F91FF4202A5B7A00FE6CD1 /* AppDelegate.swift */; };
 		D1F91FFA202A5B7B00FE6CD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1F91FF8202A5B7B00FE6CD1 /* Main.storyboard */; };
@@ -45,6 +48,9 @@
 		59227CB8A2EFE564F2923552 /* Pods_instagramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE1C7552BDAE4C3D2067A5B /* Pods-instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-instagram/Pods-instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		AB992F6771659BBD7B147C0D /* Pods_instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D18AA737202A941C003C6B85 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D18AA739202A98B6003C6B85 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		D18AA73B202A9CAF003C6B85 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		D195A1AB202A75A6004F17A0 /* PhotoMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMapViewController.swift; sourceTree = "<group>"; };
 		D1F91FF1202A5B7A00FE6CD1 /* instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F91FF4202A5B7A00FE6CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +151,7 @@
 				D1F91FFB202A5B7B00FE6CD1 /* Assets.xcassets */,
 				D1F91FFD202A5B7B00FE6CD1 /* LaunchScreen.storyboard */,
 				D1F92000202A5B7B00FE6CD1 /* Info.plist */,
+				D18AA73B202A9CAF003C6B85 /* Post.swift */,
 			);
 			path = instagram;
 			sourceTree = "<group>";
@@ -172,6 +179,8 @@
 			children = (
 				D1F92023202A636700FE6CD1 /* LoginViewController.swift */,
 				D195A1AB202A75A6004F17A0 /* PhotoMapViewController.swift */,
+				D18AA737202A941C003C6B85 /* HomeViewController.swift */,
+				D18AA739202A98B6003C6B85 /* PostCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -355,17 +364,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-instagram/Pods-instagram-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/ParseUI/ParseUI.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParseUI.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -478,6 +485,9 @@
 				D195A1AC202A75A6004F17A0 /* PhotoMapViewController.swift in Sources */,
 				D1F92024202A636700FE6CD1 /* LoginViewController.swift in Sources */,
 				D1F91FF5202A5B7A00FE6CD1 /* AppDelegate.swift in Sources */,
+				D18AA73C202A9CAF003C6B85 /* Post.swift in Sources */,
+				D18AA738202A941C003C6B85 /* HomeViewController.swift in Sources */,
+				D18AA73A202A98B6003C6B85 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
