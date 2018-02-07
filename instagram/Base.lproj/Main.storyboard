@@ -77,43 +77,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RCj-tw-lNs">
-                                <rect key="frame" x="0.0" y="88" width="375" height="370"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="360" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RCj-tw-lNs">
+                                <rect key="frame" x="0.0" y="88" width="375" height="704"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="358" id="y92-fo-4wT" customClass="PostCell" customModule="instagram" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="358"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="360" id="y92-fo-4wT" customClass="PostCell" customModule="instagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="360"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y92-fo-4wT" id="epA-Xc-HUB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="357.66666666666669"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="359.66666666666669"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mFF-Tm-hJK">
-                                                    <rect key="frame" x="15" y="35" width="345" height="256"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9B-LA-PKR">
-                                                    <rect key="frame" x="15" y="6" width="81" height="21"/>
+                                                    <rect key="frame" x="15" y="11" width="309" height="42"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctB-5j-W9z">
-                                                    <rect key="frame" x="15" y="296" width="81" height="21"/>
+                                                    <rect key="frame" x="15" y="296" width="329" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izb-vG-e19">
-                                                    <rect key="frame" x="15" y="316" width="81" height="21"/>
+                                                    <rect key="frame" x="15" y="314" width="329" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mFF-Tm-hJK" customClass="PFImageView">
+                                                    <rect key="frame" x="15" y="61" width="345" height="227"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
@@ -130,7 +130,11 @@
                         <viewLayoutGuide key="safeArea" id="R21-Zg-AgZ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home Feed" id="dmZ-TD-qHi">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="RHl-Pe-XVI"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="RHl-Pe-XVI">
+                            <connections>
+                                <action selector="logout:" destination="gtJ-aw-I2K" id="Dxp-Pc-6kK"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="insta_camera_btn" id="ojj-qI-mtg">
                             <connections>
                                 <action selector="newPost:" destination="gtJ-aw-I2K" id="chH-oC-suC"/>
@@ -140,6 +144,7 @@
                     <connections>
                         <outlet property="tableView" destination="RCj-tw-lNs" id="bQL-10-nSp"/>
                         <segue destination="JvS-Jq-nAa" kind="presentation" identifier="addPhotoSegue" id="uJZ-en-CSO"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="logout" id="SV0-cL-9nw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d6C-9R-bX0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -200,7 +205,7 @@
                     <connections>
                         <outlet property="captionField" destination="nr6-ZK-aU5" id="Hyy-dE-eDm"/>
                         <outlet property="imgView" destination="XYz-4R-h7r" id="9QP-Qi-Me0"/>
-                        <segue destination="gtJ-aw-I2K" kind="presentation" identifier="postUpdateSegue" id="0fK-Va-jAn"/>
+                        <segue destination="mqt-rh-WRp" kind="presentation" identifier="postUpdateSegue" id="5nb-iX-fYg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BzT-gp-iaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -248,6 +253,6 @@
         <image name="insta_camera_btn" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0fK-Va-jAn"/>
+        <segue reference="5nb-iX-fYg"/>
     </inferredMetricsTieBreakers>
 </document>

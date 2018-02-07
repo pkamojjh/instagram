@@ -22,6 +22,7 @@ class PostCell: UITableViewCell {
     var post: PFObject! {
         didSet {
             self.usernameLabel.text = post["author"] as? String
+            print(usernameLabel.text)
             self.dateLabel.text = "\(post.createdAt!)"
             self.img2View.file = post["media"] as? PFFile
             self.captionLabel.text = post["caption"] as? String

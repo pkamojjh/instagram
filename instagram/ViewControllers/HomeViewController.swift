@@ -11,7 +11,9 @@ import Parse
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-   
+    
+    
+    
     
 
     @IBOutlet weak var tableView: UITableView!
@@ -74,6 +76,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBAction func newPost(_ sender: Any) {
         self.performSegue(withIdentifier: "addPhotoSegue", sender: nil)
     }
+    @IBAction func logout(_ sender: Any) {
+        self.performSegue(withIdentifier: "logout", sender: nil)
+    } 
    
     
     
